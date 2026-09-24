@@ -103,8 +103,8 @@
   <p>We collect only the minimal data required to provide application functionality:</p>
   <ul>
     <li><strong>Account Information:</strong> Account creation is required to play DevLife. When you sign in with Google, authentication is handled securely via Firebase Authentication. We receive only your Google Account email address and a system-generated Firebase User Identifier (UID) to authenticate your access, keep your session active, and link purchases across devices. <em>We do not create, collect, or store any separate username or password on our servers.</em> Any in-game character name you choose during gameplay is saved solely on your local device.</li>
-    <li><strong>Purchase History & Subscription Data:</strong> When you purchase subscriptions or packages, transaction metadata (such as order IDs, active entitlement status, and product IDs) is verified via Google Play Billing and RevenueCat. We never collect or store your payment details, credit card numbers, or banking credentials.</li>
-    <li><strong>Device & Diagnostic Identifiers:</strong> Anonymous installation tokens and operational diagnostics (e.g., authentication latency and network request error codes) handled automatically by Firebase and RevenueCat SDKs to maintain app reliability and combat fraud.</li>
+    <li><strong>Purchase History, Subscriptions & Lifetime Access Data:</strong> When you purchase subscriptions (3-Month) or one-time upgrades (Lifetime), transactions are processed exclusively through Google Play Billing. We and our servers <strong>never collect, receive, or store credit card numbers, debit card details, or banking credentials</strong>. RevenueCat securely verifies transaction receipts, entitlement status (DevLife Pro), order identifiers, and subscription renewal/expiration dates using your anonymous Firebase User ID to unlock features and support purchase restoration across devices.</li>
+    <li><strong>Device & Diagnostic Identifiers:</strong> Anonymous installation tokens, crash stack traces (via Firebase Crashlytics), and operational diagnostics (e.g., authentication latency and network request error codes) handled automatically by Firebase and RevenueCat SDKs to maintain app reliability, fix crashes, and combat fraud.</li>
     <li><strong>In-Game Simulation Data:</strong> All game decisions, skills, career arcs, storylines, and simulated finances are stored <strong>strictly on your local device storage</strong>. They are never uploaded to any cloud backend or shared with third parties.</li>
   </ul>
 
@@ -112,16 +112,16 @@
   <p>Your information is used solely for the following operational purposes:</p>
   <ul>
     <li>Authenticating your user session across app restarts.</li>
-    <li>Granting and syncing entitled in-app purchases and subscriptions across devices.</li>
-    <li>Preventing fraudulent access and diagnosing technical system failures.</li>
+    <li>Granting, verifying, and syncing active subscriptions and lifetime purchases across devices.</li>
+    <li>Preventing fraudulent access and diagnosing technical system failures and crashes.</li>
   </ul>
 
   <h2>3. Third-Party Service Providers</h2>
   <p>We work with trusted industry service providers who process data strictly on our behalf:</p>
   <ul>
-    <li><strong>Firebase Authentication (Google LLC):</strong> Identity and authentication infrastructure.</li>
-    <li><strong>RevenueCat, Inc.:</strong> In-app purchase verification and entitlement management.</li>
-    <li><strong>Google Play Billing (Google LLC):</strong> Secure payment and subscription processing.</li>
+    <li><strong>Firebase Authentication & Crashlytics (Google LLC):</strong> Identity, authentication infrastructure, crash reporting, and stability diagnostics.</li>
+    <li><strong>RevenueCat, Inc.:</strong> In-app purchase verification, receipt validation, and entitlement management.</li>
+    <li><strong>Google Play Billing (Google LLC):</strong> Merchant of record for secure payment and subscription processing.</li>
   </ul>
 
   <h2>4. Data Sharing and Selling</h2>
@@ -132,6 +132,7 @@
 
   <h2>6. Account & Data Deletion Rights</h2>
   <p>You have the full right to delete your account and request complete erasure of your associated data at any time. To submit an account and data deletion request, please visit our <a href="delete-account.html">Account & Data Deletion Portal</a> or email us at <a href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>.</p>
+  <p><em>Important note regarding subscriptions:</em> Deleting your DevLife account or uninstalling the app deletes your game profile and unlinks your authentication record, but <strong>does not automatically cancel active auto-renewing subscriptions in Google Play</strong>. Active subscriptions must be cancelled directly in the Google Play Store (under Subscriptions) to prevent Google from billing subsequent billing cycles.</p>
 
   <h2>7. Children's Privacy</h2>
   <p>DevLife does not knowingly collect personally identifiable information from children under the age of 13 (or under 16 where required by local law). If you believe a child has provided us with personal information, please contact us immediately for prompt deletion.</p>
