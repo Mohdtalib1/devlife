@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevLife - Privacy Policy</title>
+  <title>DevJourney - Privacy Policy</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -11,58 +12,81 @@
       color: #1f2937;
       background: #f9fafb;
       margin: 0;
-      padding: 24px;
+      padding: 24px 16px;
     }
+
     .container {
       max-width: 760px;
       margin: 0 auto;
       background: #ffffff;
       padding: 36px;
       border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
     }
+
     nav {
       margin-bottom: 24px;
       padding-bottom: 12px;
       border-bottom: 1px solid #e5e7eb;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
     }
+
     nav a {
       color: #2563eb;
       text-decoration: none;
-      margin-right: 16px;
+      margin-right: 18px;
       font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     h1 {
       color: #111827;
       font-size: 1.85rem;
+      margin-top: 0;
       margin-bottom: 8px;
     }
+
     .date {
       color: #6b7280;
       font-size: 0.9rem;
       margin-bottom: 24px;
     }
+
+    .entity-note {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      font-size: 0.88rem;
+      color: #1e40af;
+    }
+
     h2 {
-      color: #1f2937;
+      color: #111827;
       font-size: 1.25rem;
       margin-top: 28px;
       border-bottom: 1px solid #f3f4f6;
       padding-bottom: 6px;
     }
-    p, li {
+
+    p,
+    li {
       color: #4b5563;
       font-size: 0.95rem;
     }
+
     ul {
       padding-left: 20px;
     }
+
     li {
       margin-bottom: 8px;
     }
+
     .highlight-box {
       background: #eff6ff;
       border-left: 4px solid #3b82f6;
@@ -72,6 +96,7 @@
       font-size: 0.9rem;
       color: #1e40af;
     }
+
     .footer {
       margin-top: 40px;
       font-size: 0.85rem;
@@ -80,69 +105,122 @@
       border-top: 1px solid #e5e7eb;
       padding-top: 16px;
     }
+
+    .footer a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
-<div class="container">
-  <nav>
-    <a href="privacy.html" style="font-weight: 700; color: #111827;">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="delete-account.html">Account Deletion</a>
-  </nav>
+  <div class="container">
+    <nav>
+      <a href="privacy.html" style="font-weight: 700; color: #111827;">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="delete-account.html">Account Deletion</a>
+    </nav>
 
-  <h1>Privacy Policy for DevLife</h1>
-  <div class="date">Last updated: September 2026</div>
+    <h1>Privacy Policy for DevJourney</h1>
+    <div class="date">Last updated: September 2026</div>
 
-  <p>DevLife is an independently developed mobile game created and maintained by an individual developer ("developer", "I", or "we"). This Privacy Policy details how information is handled, processed, and protected when you download and play <strong>DevLife</strong>.</p>
+    <div class="entity-note">
+      <strong>Application:</strong> DevJourney (Package ID: <code>com.devlifestudio.devlife</code>)<br>
+      <strong>Developer Name:</strong> Mk Sikander &bull; <strong>Account Owner:</strong> Mohd Kafeel (<a
+        href="mailto:kafeelashraf7@gmail.com">kafeelashraf7@gmail.com</a>)
+    </div>
 
-  <div class="highlight-box">
-    <strong>Summary:</strong> Privacy is taken seriously. DevLife does not collect advertising IDs, track your location, or transmit your in-game career simulation to any remote servers. Data processing is strictly limited to account authentication (Google Sign-In via Firebase) and in-app purchase verification (RevenueCat). There are no separate usernames or passwords stored on any server.
+    <p><strong>DevJourney</strong> is an independently developed mobile application created by developer <strong>Mk
+        Sikander</strong> and published under account owner <strong>Mohd Kafeel</strong> ("developer", "I", or "we").
+      This Privacy Policy details how information is handled, processed, and protected when you download and play
+      <strong>DevJourney</strong>.</p>
+
+    <div class="highlight-box">
+      <strong>Summary:</strong> Privacy is taken seriously. DevJourney does not collect advertising IDs, track your
+      location, or transmit your in-game career simulation to any remote servers. Data processing is strictly limited to
+      account authentication (Google Sign-In via Firebase) and in-app purchase verification (RevenueCat). There are no
+      separate usernames or passwords stored on any server.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect only the minimal data required to provide application functionality:</p>
+    <ul>
+      <li><strong>Account Information:</strong> Account creation is required to play DevJourney. When you sign in with
+        Google, authentication is handled securely via Firebase Authentication. We receive only your Google Account
+        email address and a system-generated Firebase User Identifier (UID) to authenticate your access, keep your
+        session active, and link purchases across devices. <em>We do not create, collect, or store any separate username
+          or password on our servers.</em> Any in-game character name you choose during gameplay is saved solely on your
+        local device.</li>
+      <li><strong>Purchase History, Subscriptions &amp; Lifetime Access Data:</strong> When you purchase subscriptions
+        (3-Month) or one-time upgrades (Lifetime), transactions are processed exclusively through Google Play Billing.
+        We and our servers <strong>never collect, receive, or store credit card numbers, debit card details, or banking
+          credentials</strong>. RevenueCat securely verifies transaction receipts, entitlement status (DevJourney Pro),
+        order identifiers, and subscription renewal/expiration dates using your anonymous Firebase User ID to unlock
+        features and support purchase restoration across devices.</li>
+      <li><strong>Device &amp; Diagnostic Identifiers:</strong> Anonymous installation tokens, crash stack traces (via
+        Firebase Crashlytics), and operational diagnostics (e.g., authentication latency and network request error
+        codes) handled automatically by Firebase and RevenueCat SDKs to maintain app reliability, fix crashes, and
+        combat fraud.</li>
+      <li><strong>In-Game Simulation Data:</strong> All game decisions, skills, career arcs, storylines, and simulated
+        finances are stored <strong>strictly on your local device storage</strong>. They are never uploaded to any cloud
+        backend or shared with third parties.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>Your information is used solely for the following operational purposes:</p>
+    <ul>
+      <li>Authenticating your user session across app restarts.</li>
+      <li>Granting, verifying, and syncing active subscriptions and lifetime purchases across devices.</li>
+      <li>Preventing fraudulent access and diagnosing technical system failures and crashes.</li>
+    </ul>
+
+    <h2>3. Third-Party Service Providers</h2>
+    <p>We work with trusted industry service providers who process data strictly on our behalf:</p>
+    <ul>
+      <li><strong>Firebase Authentication &amp; Crashlytics (Google LLC):</strong> Identity, authentication
+        infrastructure, crash reporting, and stability diagnostics.</li>
+      <li><strong>RevenueCat, Inc.:</strong> In-app purchase verification, receipt validation, and entitlement
+        management.</li>
+      <li><strong>Google Play Billing (Google LLC):</strong> Merchant of record for secure payment and subscription
+        processing.</li>
+    </ul>
+
+    <h2>4. Data Sharing and Selling</h2>
+    <p>We <strong>do not sell, rent, or monetize</strong> your personal information. We do not integrate third-party
+      advertising SDKs, ad networks, or data brokers.</p>
+
+    <h2>5. Security &amp; Encryption in Transit</h2>
+    <p>All network data transmitted by DevJourney to our service providers (Firebase and RevenueCat) is strictly
+      encrypted in transit using industry-standard <strong>HTTPS / TLS 1.2+</strong> protocols.</p>
+
+    <h2>6. Account &amp; Data Deletion Rights</h2>
+    <p>You have the full right to delete your account and request complete erasure of your associated data at any time.
+      To submit an account and data deletion request, please visit our <a href="delete-account.html">Account &amp; Data
+        Deletion Portal</a> or email the developer at <a href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>.</p>
+    <p><em>Important note regarding subscriptions:</em> Deleting your DevJourney account or uninstalling the app deletes
+      your game profile and unlinks your authentication record, but <strong>does not automatically cancel active
+        auto-renewing subscriptions in Google Play</strong>. Active subscriptions must be cancelled directly in the
+      Google Play Store (under Subscriptions) to prevent Google from billing subsequent billing cycles.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>DevJourney does not knowingly collect personally identifiable information from children under the age of 13 (or
+      under 16 where required by local law). If you believe a child has provided us with personal information, please
+      contact us immediately for prompt deletion.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>For questions or privacy concerns regarding this policy, please reach out to us at: <a
+        href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>.</p>
+
+    <div class="footer">
+      &copy; 2026 DevJourney &bull; Developer: Mk Sikander &bull; Account Owner: Mohd Kafeel (<a
+        href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>). All rights reserved. &bull; <a href="terms.html">Terms of
+        Service</a> &bull; <a href="delete-account.html">Account Deletion</a>
+    </div>
   </div>
-
-  <h2>1. Information We Collect</h2>
-  <p>We collect only the minimal data required to provide application functionality:</p>
-  <ul>
-    <li><strong>Account Information:</strong> Account creation is required to play DevLife. When you sign in with Google, authentication is handled securely via Firebase Authentication. We receive only your Google Account email address and a system-generated Firebase User Identifier (UID) to authenticate your access, keep your session active, and link purchases across devices. <em>We do not create, collect, or store any separate username or password on our servers.</em> Any in-game character name you choose during gameplay is saved solely on your local device.</li>
-    <li><strong>Purchase History, Subscriptions & Lifetime Access Data:</strong> When you purchase subscriptions (3-Month) or one-time upgrades (Lifetime), transactions are processed exclusively through Google Play Billing. We and our servers <strong>never collect, receive, or store credit card numbers, debit card details, or banking credentials</strong>. RevenueCat securely verifies transaction receipts, entitlement status (DevLife Pro), order identifiers, and subscription renewal/expiration dates using your anonymous Firebase User ID to unlock features and support purchase restoration across devices.</li>
-    <li><strong>Device & Diagnostic Identifiers:</strong> Anonymous installation tokens, crash stack traces (via Firebase Crashlytics), and operational diagnostics (e.g., authentication latency and network request error codes) handled automatically by Firebase and RevenueCat SDKs to maintain app reliability, fix crashes, and combat fraud.</li>
-    <li><strong>In-Game Simulation Data:</strong> All game decisions, skills, career arcs, storylines, and simulated finances are stored <strong>strictly on your local device storage</strong>. They are never uploaded to any cloud backend or shared with third parties.</li>
-  </ul>
-
-  <h2>2. How We Use Your Information</h2>
-  <p>Your information is used solely for the following operational purposes:</p>
-  <ul>
-    <li>Authenticating your user session across app restarts.</li>
-    <li>Granting, verifying, and syncing active subscriptions and lifetime purchases across devices.</li>
-    <li>Preventing fraudulent access and diagnosing technical system failures and crashes.</li>
-  </ul>
-
-  <h2>3. Third-Party Service Providers</h2>
-  <p>We work with trusted industry service providers who process data strictly on our behalf:</p>
-  <ul>
-    <li><strong>Firebase Authentication & Crashlytics (Google LLC):</strong> Identity, authentication infrastructure, crash reporting, and stability diagnostics.</li>
-    <li><strong>RevenueCat, Inc.:</strong> In-app purchase verification, receipt validation, and entitlement management.</li>
-    <li><strong>Google Play Billing (Google LLC):</strong> Merchant of record for secure payment and subscription processing.</li>
-  </ul>
-
-  <h2>4. Data Sharing and Selling</h2>
-  <p>We <strong>do not sell, rent, or monetize</strong> your personal information. We do not integrate third-party advertising SDKs, ad networks, or data brokers.</p>
-
-  <h2>5. Security & Encryption in Transit</h2>
-  <p>All network data transmitted by DevLife to our service providers (Firebase and RevenueCat) is strictly encrypted in transit using industry-standard <strong>HTTPS / TLS 1.2+</strong> protocols.</p>
-
-  <h2>6. Account & Data Deletion Rights</h2>
-  <p>You have the full right to delete your account and request complete erasure of your associated data at any time. To submit an account and data deletion request, please visit our <a href="delete-account.html">Account & Data Deletion Portal</a> or email us at <a href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>.</p>
-  <p><em>Important note regarding subscriptions:</em> Deleting your DevLife account or uninstalling the app deletes your game profile and unlinks your authentication record, but <strong>does not automatically cancel active auto-renewing subscriptions in Google Play</strong>. Active subscriptions must be cancelled directly in the Google Play Store (under Subscriptions) to prevent Google from billing subsequent billing cycles.</p>
-
-  <h2>7. Children's Privacy</h2>
-  <p>DevLife does not knowingly collect personally identifiable information from children under the age of 13 (or under 16 where required by local law). If you believe a child has provided us with personal information, please contact us immediately for prompt deletion.</p>
-
-  <h2>8. Contact Us</h2>
-  <p>For questions or privacy concerns regarding this policy, please reach out to us at: <a href="mailto:mtq751@gmail.com">mtq751@gmail.com</a>.</p>
-
-  <div class="footer">
-    &copy; 2026 DevLife. All rights reserved. &bull; <a href="terms.html">Terms of Service</a> &bull; <a href="delete-account.html">Account Deletion</a>
-  </div>
-</div>
 </body>
+
 </html>
